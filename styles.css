@@ -1,0 +1,65 @@
+/* style.css */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: burlywood;
+  color: #8B4513;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #F5F5DC;
+  color: #8B4513;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#search {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#random-meal-container, #meal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2cm; /* Add gap between meal cards */
+  justify-content: center;
+  padding: 20px;
+}
+
+.meal {
+  border: 1px solid #D2B48C;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+  background-color: bisque;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal:hover {
+  transform: scale(1.05);
+}
+
+.meal img {
+  width: 100%;
+  height: 200px; /* Set fixed height for images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+.meal h3 {
+  text-align: center;
+  padding: 10px;
+  background-color: #F5F5DC;
+  width: 100%;
+}

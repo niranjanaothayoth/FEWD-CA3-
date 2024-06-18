@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Suggestion App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: blanchedalmond;">
+    <header class="text-center py-4">
+        <div class="container">
+            <h1 style="font-style: oblique;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">WELCOME TO THE FOOD SUGGESTION APP</h1>
+            <input type="text" id="search" class="form-control my-3" placeholder="Search for a meal category...">
+        </div>
+    </header>
+    <main class="container my-4" style="align-items: center;">
+        <section id="random-meal" class="mb-5">
+            <h2 class="text-center mb-4" style="font-style: oblique;">RANDOM MEAL</h2>
+            <div id="random-meal-container"></div>
+        </section>
+        <section id="search-results" style="display: none;">
+            <h2 class="text-center mb-4">Search Results</h2>
+            <div id="meal-list"></div> <br><br><br>
+        </section>
+    </main>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
